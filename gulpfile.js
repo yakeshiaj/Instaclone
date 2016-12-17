@@ -19,8 +19,8 @@ gulp.task('browser-sync', function() {
 
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], () => {
   gulp.watch('./src/sass/**/*', ['styles']);
-  gulp.watch('./client/src/react/**/*', ['scripts']);
-  gulp.watch('./client/public/*.html')
+  gulp.watch('./src/react/**/*', ['scripts']);
+  gulp.watch('./public/*.html')
     .on('change', reload);
 });
 

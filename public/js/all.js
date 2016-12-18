@@ -1,0 +1,1 @@
+"use strict";var car=function(){console.log("testing")};

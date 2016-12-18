@@ -35,7 +35,7 @@ gulp.task('styles', () => {
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
     }))
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream());
 });
 

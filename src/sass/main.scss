@@ -1,4 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+@import "reset";
+
 html {
     background-color: #f5f7fa;
     font-size: 14px;
@@ -9,7 +12,7 @@ html {
     overflow-y: scroll;
     text-rendering: optimizeLegibility;
     /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    
+
 }
 body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -18,37 +21,15 @@ body {
   color: #566b78;
     /*background: red;*/
 }
-h1,
-h2,
-strong {
-  color: #333;
-}
-h2{
-  margin-top: 1em;
-  padding-top: 1em;
-}
-code,
-pre {
-  background: #f5f7f9;
-  border-bottom: 1px solid #d8dee9;
-  color: #a7adba;
-}
-pre{
-  border-left: 2px solid #69c;
-}
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom;
+
+h1{
+  color: blue;
 }
 
-pre {
-  padding: 1em;
+body{
+  background: #fff;
 }
-img.responsive {
-    width: 100%;
-}
-img.circle {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+
+p{
+font-size: 20px;
 }

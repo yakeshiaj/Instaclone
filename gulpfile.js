@@ -18,8 +18,8 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], () => {
-  gulp.watch('./src/sass/**/*', ['styles']);
-  gulp.watch('./src/**/*', ['scripts']);
+  gulp.watch('./src/sass/**/*', ['styles']).on('change', reload);
+  gulp.watch('./src/**/*', ['scripts']).on('change', reload);
   gulp.watch('./public/*.html')
     .on('change', reload);
 });
@@ -36,7 +36,7 @@ gulp.task('styles', () => {
       browsers: ['last 2 versions'],
     }))
     .pipe(gulp.dest('./public/css'))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 });
 
 
